@@ -1,0 +1,275 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #4CAF50; /* Green color */
+    padding: 15px 0;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  header .logo span {
+    color: #FFEB3B; /* Yellow color */
+  }
+  
+  header .navbar {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  header .navbar li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  header .navbar li a:hover {
+    color: #FFEB3B;
+  }
+  
+  /* Button Style */
+  .btn {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Home Section */
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8F5E9;
+    padding: 60px 20px;
+  }
+  
+  .home-content {
+    text-align: center;
+    color: #333;
+  }
+  
+  .home h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .home h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .home .multiple-text {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .home-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Health Tips Section */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .text-center p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .text-center .btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .text-center .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Review Box */
+  .review-box {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .review-box .rating {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-box .rating p {
+    margin-bottom: 10px;
+  }
+  
+  .review-box .rating strong {
+    color: #4CAF50;
+  }
+  
+  .review-box .rating span {
+    font-size: 20px;
+  }
+  
+  /* Highlights Section */
+  .highlights {
+    background-color: #333;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .highlights h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .highlights .highlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .highlights .card {
+    background-color: #555;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .highlights .card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .highlights .card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .home-content h1 {
+      font-size: 40px;
+    }
+  
+    .home-content h3 {
+      font-size: 24px;
+    }
+  
+    .home-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .highlights .highlight-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .highlights .card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  
+    .review-box .rating {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-content h1 {
+      font-size: 30px;
+    }
+  
+    .home-content h3 {
+      font-size: 22px;
+    }
+  
+    .text-center h2 {
+      font-size: 28px;
+    }
+  
+    .text-center p {
+      font-size: 16px;
+    }
+  }
+  
